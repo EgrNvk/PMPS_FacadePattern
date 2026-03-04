@@ -31,7 +31,7 @@ class Kitchen:
         print("\tПрикрашаємо десерт")
 
     def make_dessert(self):
-        print("\tКухня починає готувати десерт:")
+        print("Кухня починає готувати десерт:")
         self.prepare_ingredients()
         self.bake_dessert()
         self.decorate_dessert()
@@ -63,7 +63,7 @@ class CoffeeShopFacade:
         self.cashier = Cashier()
 
     def order_combo(self):
-        print("Прийнято замовлення:")
+        print("Клієнт робить замовлення:")
         self.barista.make_coffee()
         self.kitchen.make_dessert()
         self.cashier.make_bill()
